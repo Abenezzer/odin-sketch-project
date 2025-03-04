@@ -1,5 +1,7 @@
 const grid = document.querySelector(".flex-continer");
 const GRIDITEMSIZE = 20;
+let write = false;
+let penColor = "red";
 
 let numberOfGrids = 16;
 // calculate the gird size
@@ -19,3 +21,10 @@ for (i = 0; i < gridSize; i++) {
   gridItem.classList.add("flex-item");
   grid.appendChild(gridItem);
 }
+
+// change the color of grid if its hovered on it
+addEventListener("mousedown", () => (write = true));
+addEventListener("mouseup", () => (write = false));
+grid.addEventListener("mouseover", (e) => {
+  if (write) e.target.style.backgroundColor = penColor;
+});
