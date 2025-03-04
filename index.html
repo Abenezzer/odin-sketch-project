@@ -8,9 +8,24 @@
   </head>
   <body>
     <div class="container">
-        <h1>Sketch Board</h1>
+      <h1>Sketch Board</h1>
+      <button class="setting">Setting</button>
       <div class="flex-continer"></div>
     </div>
+
+    <div class="popup">
+      <input type="number" name="noGrid" />
+      <select id="selectColor">
+        <option value="#">Select Color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+        <option value="gold">Gold</option>
+      </select>
+      <button>Create Grid</button>
+    </div>
+
+    <div class="bgCover"></div>
 
     <script src="./sketch.js"></script>
   </body>
