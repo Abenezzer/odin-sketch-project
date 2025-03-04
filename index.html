@@ -14,7 +14,14 @@
     </div>
 
     <div class="popup">
-      <input type="number" name="noGrid" />
+      <input
+        id="noGrid"
+        type="number"
+        name="noGrid"
+        placeholder="No of Grids"
+        min="5"
+        max="100"
+      />
       <select id="selectColor">
         <option value="#">Select Color</option>
         <option value="red">Red</option>
@@ -22,10 +29,10 @@
         <option value="black">Black</option>
         <option value="gold">Gold</option>
       </select>
-      <button>Create Grid</button>
+      <button class="generate">Generate</button>
     </div>
 
-    <div class="bgCover"></div>
+    <div class="overlay"></div>
 
     <script src="./sketch.js"></script>
   </body>
